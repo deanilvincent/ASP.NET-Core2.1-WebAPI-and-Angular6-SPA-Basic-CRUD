@@ -8,7 +8,7 @@ namespace mywebapp.api.Helpers
     {
         public AutoMapperProfile()
         {
-            CreateMap<Employee, EmployeeToCreate>();
+            CreateMap<Employee, EmployeeToSave>();
         }
     }
 }

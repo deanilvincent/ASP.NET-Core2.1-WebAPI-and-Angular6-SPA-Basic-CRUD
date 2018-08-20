@@ -1,6 +1,6 @@
 namespace mywebapp.api.Dtos
 {
-    public class EmployeeToCreate
+    public class EmployeeToSave
     {
         public string Firstname { get; set; }
 
