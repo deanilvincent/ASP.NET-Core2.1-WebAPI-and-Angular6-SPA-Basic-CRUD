@@ -36,13 +36,13 @@ namespace mywebapp.api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(EmployeeToCreate employeeToCreate)
+        public async Task<IActionResult> Create(EmployeeToSave employeeToSave)
         {
             try
             {
                 await Task.Run(() =>
                 {
-                    var employee = mapper.Map<Employee>(employeeToCreate);
+                    var employee = mapper.Map<Employee>(employeeToSave);
 
                     employeeRepo.InsertEmployee(employee);
                 });
@@ -52,7 +52,52 @@ namespace mywebapp.api.Controllers
             catch (Exception e)
             {
                 Debug.WriteLine(e.Message);
-                return Ok("Something went wrong. Unsuccessfully save");
+                return BadRequest("Something went wrong. Unsuccessfully save");
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, EmployeeToSave employeeToSave)
+        {
+            if (id == 0)
+            {
+                return BadRequest("Id is empty");
+            }
+
+            try
+            {
+                await Task.Run(() =>
+                {
+                    var employee = mapper.Map<Employee>(employeeToSave);
+                    employee.EmployeeId = id;
+
+                    employeeRepo.UpdateEmployee(employee);
+                });
+
+                return Ok("Successfully saved");
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+                return BadRequest("Something went wrong. Unsuccessfully save");
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteById(int id)
+        {
+            try
+            {
+                await Task.Run(() =>
+                {
+                    employeeRepo.DeleteEmployeeById(id);
+                });
+                return Ok("Successfully deleted");
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+                return BadRequest("Something went wrong. Unsuccessfully delete");
             }
         }
     }
