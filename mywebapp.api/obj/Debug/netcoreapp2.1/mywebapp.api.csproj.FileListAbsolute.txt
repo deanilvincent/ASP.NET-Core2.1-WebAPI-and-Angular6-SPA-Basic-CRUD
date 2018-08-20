@@ -1,0 +1,14 @@
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\bin\Debug\netcoreapp2.1\mywebapp.api.deps.json
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\bin\Debug\netcoreapp2.1\mywebapp.api.runtimeconfig.json
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\bin\Debug\netcoreapp2.1\mywebapp.api.runtimeconfig.dev.json
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\bin\Debug\netcoreapp2.1\mywebapp.api.dll
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\bin\Debug\netcoreapp2.1\mywebapp.api.pdb
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.csprojAssemblyReference.cache
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.csproj.CoreCompileInputs.cache
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.RazorAssemblyInfo.cache
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.RazorAssemblyInfo.cs
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.AssemblyInfoInputs.cache
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.AssemblyInfo.cs
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.RazorTargetAssemblyInfo.cache
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.dll
+E:\VS2017\Repos-2\ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD\mywebapp.api\obj\Debug\netcoreapp2.1\mywebapp.api.pdb
