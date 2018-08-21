@@ -1,3 +1,25 @@
-<p>
-  list-of-employee works!
-</p>
+<table class="table is-fullwidth">
+  <thead>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Position</th>
+    <th>Department</th>
+    <th>Age</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{employee.firstname}}</td>
+      <td>{{employee.lastname}}</td>
+      <td>{{employee.position}}</td>
+      <td>{{employee.department}}</td>
+      <td>{{employee.age}}</td>
+      <td>
+        <button class="button is-warning" (click)="editEmployee(employee.employeeId)">Edit</button> &nbsp;
+        <button class="button is-danger" (click)="openDeleteModal(employee.employeeId)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<app-delete-employee-modal [valuesFromListOfEmployee]="valuesToDeleteModal"></app-delete-employee-modal>
