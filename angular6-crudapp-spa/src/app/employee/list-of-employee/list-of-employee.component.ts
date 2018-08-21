@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { EmployeeService } from '../../_services/employee.service';
+import { Router } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-list-of-employee',
@@ -6,10 +8,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-of-employee.component.css']
 })
 export class ListOfEmployeeComponent implements OnInit {
+  valuesToDeleteModal: any = {};
 
-  constructor() { }
+  employees: any = [];
+
+  constructor(private empService: EmployeeService, private router: Router) { }
 
   ngOnInit() {
+    this.getEmployees();
   }
 
+  getEmployees() {
+    this.empService.getEmployees().subscribe(response => {
+      this.employees = response;
+    }, error => {
+      console.log('Something went wrong');
+    });
+  }
+
+  editEmployee(id: number) {
+    this.router.navigate(['employee/edit', id]);
+  }
+
+  openDeleteModal(id: number) {
+    this.valuesToDeleteModal.modalValue = true;
+    this.valuesToDeleteModal.employeeId = id;
+  }
 }

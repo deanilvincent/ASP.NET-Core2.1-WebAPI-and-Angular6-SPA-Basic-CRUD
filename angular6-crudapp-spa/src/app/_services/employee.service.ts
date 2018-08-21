@@ -14,18 +14,18 @@ export class EmployeeService {
     }
 
     getEmployeeById(id: number): Observable<Employee> {
-        return this.http.get<Employee>(`${environment.baseUrl}emplooyees?id=${id}`);
+        return this.http.get<Employee>(`${environment.baseUrl}employees/${id}`);
     }
 
     createEmployee(employee: any) {
-        this.http.post(`${environment.baseUrl}employees`, employee);
+        return this.http.post(`${environment.baseUrl}employees`, employee);
     }
 
     updateEmployee(id: number, employee: any) {
-        this.http.put(`${environment.baseUrl}employees?id=${id}`, employee);
+        return this.http.put(`${environment.baseUrl}employees/${id}`, employee);
     }
 
     deleteEmployee(id: number) {
-        this.http.delete(`${environment.baseUrl}employees?id=${id}`);
+        return this.http.delete(`${environment.baseUrl}employees/${id}`);
     }
 }

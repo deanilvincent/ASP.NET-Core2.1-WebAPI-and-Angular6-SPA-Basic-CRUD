@@ -3,19 +3,19 @@
     <div class="field">
       <label class="label">Firstname</label>
       <div class="control">
-        <input class="input" placeholder="John" />
+        <input class="input" placeholder="John" [(ngModel)]="employee.firstname" />
       </div>
     </div>
     <div class="field">
       <label class="label">Position</label>
       <div class="control">
-        <input class="input" placeholder="Programmer" />
+        <input class="input" placeholder="Programmer" [(ngModel)]="employee.position" />
       </div>
     </div>
     <div class="field">
       <label class="label">Age</label>
       <div class="control">
-        <input class="input" type="number" placeholder="33" />
+        <input class="input" type="number" placeholder="33" [(ngModel)]="employee.age" />
       </div>
     </div>
   </div>
@@ -23,20 +23,20 @@
     <div class="field">
       <label class="label">Lastname</label>
       <div class="control">
-        <input class="input" placeholder="Doe" />
+        <input class="input" placeholder="Doe" [(ngModel)]="employee.lastname" />
       </div>
     </div>
     <div class="field">
       <label class="label">Department</label>
       <div class="control">
-        <input class="input" placeholder="IT" />
+        <input class="input" placeholder="IT" [(ngModel)]="employee.department" />
       </div>
     </div>
   </div>
 </div>
 <hr>
 <div align="center">
-  <button class="button is-medium is-success">Save</button>
+  <button class="button is-medium is-success" (click)="submitEmployee()">Save</button>
   &nbsp;
   <button class="button is-medium" [routerLink]="['/employee']">Go to list</button>
 </div>

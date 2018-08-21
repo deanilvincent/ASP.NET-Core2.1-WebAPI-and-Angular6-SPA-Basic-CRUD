@@ -46,8 +46,7 @@ namespace mywebapp.api.Controllers
 
                     employeeRepo.InsertEmployee(employee);
                 });
-
-                return Ok("Successfully saved");
+                return Ok();
             }
             catch (Exception e)
             {
@@ -74,7 +73,7 @@ namespace mywebapp.api.Controllers
                     employeeRepo.UpdateEmployee(employee);
                 });
 
-                return Ok("Successfully saved");
+                return Ok();
             }
             catch (Exception e)
             {
@@ -92,7 +91,7 @@ namespace mywebapp.api.Controllers
                 {
                     employeeRepo.DeleteEmployeeById(id);
                 });
-                return Ok("Successfully deleted");
+                return Ok();
             }
             catch (Exception e)
             {
