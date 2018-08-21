@@ -7,12 +7,16 @@ import { CreateEmployeeComponent } from './employee/create-employee/create-emplo
 import { HomePageComponent } from './home-page/home-page.component';
 import { RouterModule } from '../../node_modules/@angular/router';
 import { appRoutes } from './route';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ListOfEmployeeComponent } from './employee/list-of-employee/list-of-employee.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       CreateEmployeeComponent,
-      HomePageComponent
+      ListOfEmployeeComponent,
+      HomePageComponent,
+      NavigationComponent
    ],
    imports: [
       BrowserModule,
