@@ -3,11 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Observable } from '../../../node_modules/rxjs';
 import { Employee } from '../_models/iemployee';
+import { AntixsrfService } from './antixsrf.service';
 
 @Injectable()
 export class EmployeeService {
 
-    constructor(private http: HttpClient) { }
+    antiXsrfToken: string;
+
+    constructor(private http: HttpClient, private antiXsrfService: AntixsrfService) { }
 
     getEmployees(): Observable<Employee[]> {
         return this.http.get<Employee[]>(`${environment.baseUrl}employees`);
@@ -18,7 +21,12 @@ export class EmployeeService {
     }
 
     createEmployee(employee: any) {
-        return this.http.post(`${environment.baseUrl}employees`, employee);
+        this.antiXsrfService.saveTokenToLocalStorage();
+        return this.http.post(`${environment.baseUrl}employees`, employee, {
+            headers: {
+                'XSRF-TOKEN': localStorage.getItem('antixsrftoken')
+            }
+        });
     }
 
     updateEmployee(id: number, employee: any) {

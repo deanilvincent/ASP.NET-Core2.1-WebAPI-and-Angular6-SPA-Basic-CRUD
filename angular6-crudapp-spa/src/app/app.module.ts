@@ -13,6 +13,7 @@ import { ListOfEmployeeComponent } from './employee/list-of-employee/list-of-emp
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { EditEmployeeComponent } from './employee/edit-employee/edit-employee.component';
 import { DeleteEmployeeModalComponent } from './employee/delete-employee-modal/delete-employee-modal.component';
+import { AntixsrfService } from './_services/antixsrf.service';
 
 @NgModule({
     declarations: [
@@ -31,7 +32,8 @@ import { DeleteEmployeeModalComponent } from './employee/delete-employee-modal/d
         FormsModule,
     ],
     providers: [
-        EmployeeService
+        EmployeeService,
+        AntixsrfService
     ],
     bootstrap: [
         AppComponent
