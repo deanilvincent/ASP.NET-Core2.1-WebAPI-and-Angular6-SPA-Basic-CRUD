@@ -31,7 +31,15 @@ export class ListOfEmployeeComponent implements OnInit {
   }
 
   openDeleteModal(id: number) {
-    this.valuesToDeleteModal.modalValue = true;
+    this.valuesToDeleteModal.isShowDeleteModal = true;
     this.valuesToDeleteModal.employeeId = id;
+  }
+
+  closeDeleteModal(value: boolean) {
+    this.valuesToDeleteModal.isShowDeleteModal = value;
+  }
+
+  reloadTable() {
+    this.getEmployees();
   }
 }
