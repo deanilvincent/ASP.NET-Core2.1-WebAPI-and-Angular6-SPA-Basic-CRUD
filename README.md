@@ -1,4 +1,4 @@
-# ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD
+# ASP.NET Core 2.1 Web API & Angular 6 SPA(Single Page Application) Basic CRUD
 
 # Angular6CrudappSpa
 
