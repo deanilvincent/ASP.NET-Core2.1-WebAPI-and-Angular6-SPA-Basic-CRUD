@@ -1,8 +1,18 @@
 # ASP.NET Core 2.1 Web API & Angular 6 SPA(Single Page Application) Basic CRUD
 
-# ASP.NET Core 2.1
+This project will help you how to start creating a basic CRUD (Create, Read, Update, Delete) using Angular as your rest client and ASP.NET Core Web API as your Restful service.
 
-# Angular 6
+# ASP.NET Core 2.1 Project
+
+## To Run App
+
+`dotnet run`
+
+## To Build App
+
+`dotnet build`
+
+# Angular 6 Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
@@ -29,3 +39,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Clone this project and run on your local machine: `https://github.com/deanilvincent/ASP.NET-Core2.1-WebAPI-and-Angular6-SPA-Basic-CRUD.git`
